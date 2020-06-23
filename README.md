@@ -16,6 +16,9 @@ npm install
 npm start
 ```
 
+> Note:
+> 원본 Github URL : https://github.com/jbj616/laboratory-website
+
 
 
 ### 파일 구성
