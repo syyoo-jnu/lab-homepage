@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <% include ../../include/head.ejs %>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <% include ../../include/header.ejs %>
+
+          <!-- Content -->
+          <section>
+            <header class="main">
+              <h1>Research</h1>
+            </header>
+            <h2>
+              Research Methods
+            </h2>
+            <hr>
+            <div class="row">
+              <div class="col-4 col-12-small">
+                <h3>Big data handling</h3>
+                <ul>
+                  <li>NoSQL data stores</li>
+                <ul style="list-style-type:square;">
+                  <li>PostgreSQL / GraphDB</li>
+                </ul>
+                <li>Statistical test</li>
+                <li>Linked data analysis</li>
+                <li>Data provenance and trust</li>
+                </ul>
+              </div>
+
+            <div class="col-6 col-12-small">
+              <h3>Artificial intelligence</h3>
+              <ul>
+                <li>Text mining</li>
+                <ul style="list-style-type:square;">
+                  <li>Word2vec</li>
+                  <li>fastText</li>
+                  <li>BERT</li>
+                </ul>
+                <li>Deep learning</li>
+                <ul style="list-style-type:square;">
+                  <li>LSTM (Long-Short Term Memory)</li>
+                  <li>CNN (Convolutional Neural Network)</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+
+          </section>
+        </div>
+      </div>
+      
+      <!-- Sidebar -->
+      <% include ../../include/sidebar.ejs %>
+
+    <!-- Scripts -->
+    <% include ../../include/script.ejs %>
+  </body>
+
+  <script>
+    document.getElementById("sidebar-research").className += " active";
+  </script>
+</html>

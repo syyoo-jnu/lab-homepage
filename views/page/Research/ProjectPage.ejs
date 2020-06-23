@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <% include ../../include/head.ejs %>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <% include ../../include/header.ejs %>
+
+          <!-- Content -->
+          <section>
+            <header class="main">
+              <h1>Research</h1>
+            </header>
+            <h2>
+              Projects
+            </h2>
+            <div class="row" id="field">
+                
+            </div>
+            <div class="table-wrapper">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Period</th>
+                          <th>Title</th>
+                          <th>Funding</th>
+                          <th>ETC</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>2020.3.1 – 2023.2.28</td>
+                          <td>내한반도 자생 생물자원을 활용한 <br>인공지능 기반 천연물 신약 후보군 예측 기술 개발</td>
+                          <td>과학기술정보통신부/신진연구자지원사업</td>
+                          <td>1억/연</td>
+                      </tr>
+                      <tr>
+                        <td>2020.4.1 - 2020.12.31
+                        </td>
+                        <td>가상인체를 이용한 MCMT 효능예측 및 해석기술 개발
+                        </td>
+                        <td>과학기술정보통신부/유전자동의보감사업단
+                        </td>
+                        <td>5천
+                        </td>
+                    </tr>
+                     
+                  </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+      
+      <!-- Sidebar -->
+      <% include ../../include/sidebar.ejs %>
+
+    <!-- Scripts -->
+    <% include ../../include/script.ejs %>
+  </body>
+  
+  <script>
+    document.getElementById("sidebar-research").className += " active";
+  </script>
+</html>

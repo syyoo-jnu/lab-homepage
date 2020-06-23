@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <% include ../../include/head.ejs %>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <% include ../../include/header.ejs %>
+
+          <!-- Content -->
+          <section>
+            <header class="main">
+              <h1>Members</h1>
+            </header>
+          
+            <h2 style="text-align: center;">Senior researcher</h2>
+              
+            <h2>Hyungkoo Kim</h2>
+            <div class="row">
+              <div class="col-3 col-12-small">
+                <img src="/images/professor.jpg" height="200px">
+              </div>
+
+              <div class="col-8 col-12-small">
+                <ul style="list-style-type: none; ">
+                  <h3>Experiences</h3>
+                  <ul>
+                    <li>
+                      Senior Researcher, 2019 – Present<br>School of Electronics and Computer Engineering, Chonnam National University
+                    </li>
+                    <li>
+                      Senior software developer, 2018-2019<br>DEVSISTERS Corporation
+                    </li>
+                    <li>
+                      Senior software developer, 2016-2018<br>GAMEBIL COM2US Platform
+                    </li>
+                    <li class="more">
+                      Senior software developer, 2012 – 2015<br>Netmarble Games Corporation
+                    </li>
+                    <li class="more">
+                      Senior Researcher, 2008 – 2012<br>Nable communications
+                    </li>
+                    <li class="more">
+                      Junior software developer, 2005 – 2007<br>Mobiletop Corporation
+                    </li>
+                    <li class="more">
+                      Junior software developer, 2000 -2004<br>NETS Corporation
+                    </li>
+                    
+                    <button id="moreButton" onclick="more()">more</button>
+                  </ul>
+              </div>
+            </div>
+            
+            
+              <h3>Publications (Book)</h3>
+              <ul>
+                <li>
+                  BREW & WIPI 모바일 프래그래밍 (가메출판사 2005)
+                </li>
+                <li>
+                  TCP/IP 소켓과 시스템 프로그래밍 (가메출판사 2005)
+                </li>
+              </ul>
+              <h3>Research strengths</h3>
+              <ul>
+                <li>Various platform development skill including mobile and server</li>
+                <li>Guide Platform linkage</li>
+                <li>API references </li>
+                <li>Usability improvement of console</li>
+              </ul>
+            </ul>
+            <br>
+            <h2 style="text-align: center;">Undergraduate students</h2>
+            <div class="row">
+              <div class="col-6 col-12-small">
+                <h3>Seyoung Min</h3>
+                <p>Major : Computer Science</p>
+              </div>
+              <div class="col-6 col-12-small">
+                <h3>Jaewook Shin</h3>
+                <p>Major : Artificial intelligence</p>
+              </div>
+              <div class="col-6 col-12-small">
+                <h3>Minji Lee</h3>
+                <p>Major :  Artificial intelligence</p>
+              </div>
+              <div class="col-6 col-12-small">
+                <h3>Sunkyung Lee</h3>
+                <p>Major : Artificial intelligence</p>
+              </div>
+              <div class="col-6 col-12-small">
+                <h3>Seonwoo Jung</h3>
+                <p>Major : Artificial intelligence</p>
+              </div>
+              <div class="col-6 col-12-small">
+                <h3>Hyeonseo Yunn</h3>
+                <p>Major : Computer Science</p>
+              </div>
+              <div class="col-6 col-12-small">
+                <h3>Jieun Choi</h3>
+                <p>Major : Computer Science</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <% include ../../include/sidebar.ejs %>
+
+    <!-- Scripts -->
+    <% include ../../include/script.ejs %>
+  </body>
+
+  <style>
+    .more{
+      font-size: 0px;
+    }
+  </style>
+
+  <script>
+    function more(){
+      
+      var moreText = document.getElementsByClassName("more");
+      
+      for(var i=0; i<moreText.length; i++){
+        moreText[i].style.fontSize = "17px"
+      }
+
+      var moreBtn = document.getElementById("moreButton");
+      moreBtn.style.display = "none";
+      
+    }
+    document.getElementById("sidebar-people").className += " active";
+  </script>
+</html>

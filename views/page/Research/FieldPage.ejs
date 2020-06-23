@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <% include ../../include/head.ejs %>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <% include ../../include/header.ejs %>
+
+          <!-- Content -->
+          <section>
+            <header class="main" >
+              <h1>Research</h1>
+            </header>
+
+            <h2>Research Topics</h2>
+
+            <hr>
+                <h3>Bioinformatics</h3>
+                <div class="row">
+                  <div class="col-4 col-12-small">
+                    <img width="100%" src="/images/reserch_topic_pic_1.png" >
+                  </div>
+
+                  <div class="col-8 col-12-small">
+                    <br>
+                    <ul>
+                      <li>As an interdisciplinary field of science, bioinformatics combines biology, computer science, information engineering, mathematics and statistics to analyze and interpret the biological data. </li>
+                      <br>
+                      <li><strong>Bioinformatics</strong> has been used for in silico analyses of biological queries using mathematical and statistical techniques.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <hr>
+                <h3>Drug candidate prediction</h3>
+                <ul>
+                  <li>Identify druggable candidates from massive and heterogeneous biological information</li>
+                  <li>We also consider the natural products and phytochemical resources                  </li>
+                </ul>
+                <img width="60%" src="/images/reserch_topic_pic_2.png" alt="">
+                
+                <hr>
+                <h3>Korean medicine research</h3>
+                <ul>
+                  <li>
+                  Identifying medicinal candidates by applying various AI algorithms to the accumulated knowledge of Korean medicine
+                </li>
+              </ul>
+              <img width="80%" src="/images/reserch_topic_pic_3.png" >
+              <hr>
+
+                <h3>Medical informatics</h3>
+                <ul>
+                  <li><strong>Medical informatics</strong> is information engineering applied to the field of <strong>health</strong> care, essentially the management and use of patient <strong>health</strong> care information</li>
+                </ul>
+                <img width="90%" src="/images/reserch_topic_pic_4.png" >
+          </section>
+        </div>
+      </div>
+      
+      <!-- Sidebar -->
+      <% include ../../include/sidebar.ejs %>
+
+    <!-- Scripts -->
+    <% include ../../include/script.ejs %>
+
+    <script>
+      document.getElementById("sidebar-research").className += " active";
+    </script>
+  </body>
+</html>
