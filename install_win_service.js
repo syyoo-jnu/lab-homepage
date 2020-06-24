@@ -2,7 +2,7 @@
 // npm install -g node-windows
 // npm link node-windows
 //
-// node install_service.js
+// node install_win_service.js
 
 
 var Service = require('node-windows').Service;
@@ -11,7 +11,7 @@ var Service = require('node-windows').Service;
 var svc = new Service({
     name:'homepage-svc',
     description: 'homepage-svc',
-    script: 'C:\\redmine-3.3.3-0\\apps\\laboratory-website\\app.js'
+    script: 'C:\\redmine-3.3.3-0\\apps\\lab-homepage\\app.js'
 });
 
 // Listen for the "install" event, which indicates the
